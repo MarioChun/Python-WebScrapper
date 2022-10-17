@@ -34,7 +34,7 @@ def __extract_wanted_jobs(keyword) :
             # print('-----------------------------------------------------------')
 
             job_data = {
-                'link' : f"https://www.wanted.co.kr/wd{link}",
+                'link' : f"https://www.wanted.co.kr/{link}",
                 'company' : company.string.replace(",","") if len(company) != 0 else "",
                 'location' : location.string.replace(",","") if location.string != None else "" ,
                 'position' : position.string.replace(",","") if len(position) != 0 else ""
